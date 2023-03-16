@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'maven:3.9.0-eclipse-temurin-11' 
+            image 'https://github.com/carlossg/docker-maven/blob/32760466401d45fabb8166b5dcf9003b07598918/eclipse-temurin-11/Dockerfile' 
             args '-v /root/.m2:/root/.m2' 
         }
     }
